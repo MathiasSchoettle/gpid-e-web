@@ -1,7 +1,7 @@
 <p>Clients im Netzwerk:</p>
   <div class="list-group">
-    <a href="client" class="list-group-item list-group-item-action">Topfpflanze</a>
-    <a href="client" class="list-group-item list-group-item-action">Yanniks Laptop</a>
-    <a href="client" class="list-group-item list-group-item-action">Majas Workstation</a>
-    <a href="client" class="list-group-item list-group-item-action">Waschmaschine</a>
+    <a href="client" *ngFor="let item of clients" href="client" class="list-group-item list-group-item-action flex-container">
+      <span class="name">{{item.name}}</span>
+      <span class="usage">{{item.usage}} W</span>
+    </a>
   </div>
