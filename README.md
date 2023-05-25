@@ -1,1 +1,1 @@
-# Web-Frontend für GPID-E @@@
+# Angular-Frontend für GPID-E @@@
