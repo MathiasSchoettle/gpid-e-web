@@ -1,4 +1,6 @@
-export type Client = {
-  name: string;
-  usage: number;
+export type GpidClient = {
+  id: number;
+  sys_descr: string;
+  deviceip: string;
+  consumption: number;
 }

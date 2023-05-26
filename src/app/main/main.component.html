@@ -1,7 +1,17 @@
 <p>Clients im Netzwerk:</p>
   <div class="list-group">
-    <a href="client" *ngFor="let item of clients" href="client" class="list-group-item list-group-item-action flex-container">
-      <span class="name">{{item.name}}</span>
-      <span class="usage">{{item.usage}} W</span>
+    <a  class="list-group-item list-group-item-action flex-container header">
+    
+      <strong class="usage">Id</strong>
+      <strong class="name">Beschreibung</strong>
+      <strong class="name">IP-Adresse</strong>
+      <strong class="usage">Verbrauch</strong>
+    </a>
+
+    <a *ngFor="let item of clients" class="list-group-item list-group-item-action flex-container">
+      <span class="usage">{{item.id}}</span>
+      <span class="name">{{item.sys_descr}}</span>
+      <span class="name">{{item.deviceip}}</span>
+      <span class="usage">{{item.consumption}} W</span>
     </a>
   </div>
