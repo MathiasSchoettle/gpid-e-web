@@ -1,18 +1,19 @@
-<h1>HydroHomie</h1>
+<h1>GPID-E </h1>
 <h4>Clients im Netzwerk:</h4>
-  <div class="list-group">
-    <a  class="list-group-item list-group-item-action flex-container header">
+<div class="list-group">
+  <a  class="list-group-item list-group-item-action flex-container header">
     
-      <strong class="usage">Id</strong>
-      <strong class="name">Beschreibung</strong>
-      <strong class="name">IP-Adresse</strong>
-      <strong class="usage">Verbrauch</strong>
-    </a>
-
-    <a *ngFor="let item of clients" class="list-group-item list-group-item-action flex-container">
-      <span class="usage">{{item.id}}</span>
-      <span class="name">{{item.sys_descr}}</span>
-      <span class="name">{{item.deviceip}}</span>
-      <span class="usage">{{item.consumption}} W</span>
-    </a>
-  </div>
+    <strong class="usage">Id</strong>
+    <strong class="name">Beschreibung</strong>
+    <strong class="name">IP-Adresse</strong>
+    <strong class="usage">Verbrauch</strong>
+  </a>
+  
+  <a *ngFor="let item of clients" class="list-group-item list-group-item-action flex-container">
+    <span class="usage">{{item.id}}</span>
+    <span class="name">{{item.sys_descr}}</span>
+    <span class="name">{{item.deviceip}}</span>
+    <span class="usage">{{item.consumption}} W</span>
+  </a>
+</div>
+<p style="padding-top: 2em; color: gray"> 	&copy; <em>Patented by Schmuhmeisters co KG GmbH AG GbR Limited und Söhne</em></p>
