@@ -1,6 +1,8 @@
-<h1>HydroHomie</h1>
+<h1>GPID-E by Schmuhmeister</h1>
 <h4>Clients im Netzwerk:</h4>
-  <div class="list-group">
+<div class="flex-col">
+  
+  <div class="list-group" style="width: 70%">
     <a  class="list-group-item list-group-item-action flex-container header">
     
       <strong class="usage">Id</strong>
@@ -8,11 +10,23 @@
       <strong class="name">IP-Adresse</strong>
       <strong class="usage">Verbrauch</strong>
     </a>
-
+    
     <a *ngFor="let item of clients" class="list-group-item list-group-item-action flex-container">
       <span class="usage">{{item.id}}</span>
       <span class="name">{{item.sys_descr}}</span>
       <span class="name">{{item.deviceip}}</span>
       <span class="usage">{{item.consumption}} W</span>
     </a>
+  </div>
+
+  <div style="width: 70%; height: 300px;">
+    
+
+    <canvas baseChart class="chart"
+[data]="pieChartData"
+[type]="pieChartType"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins">
+      </canvas>
+    </div>  
   </div>
